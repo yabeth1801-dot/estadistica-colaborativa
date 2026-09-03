@@ -39,3 +39,29 @@ plt.title("Distribucion de edades")
 plt.savefig("graficas/histograma.png")
 
 plt.close()
+
+
+
+categorias_datos = np.loadtxt(
+    "categorias.csv",
+    delimiter=",",
+    skiprows=1,
+    dtype=str
+)
+
+categorias = categorias_datos[:, 0]
+cantidades = categorias_datos[:, 1].astype(int)
+
+# GRAFICA DE PASTEL
+
+plt.pie(
+    cantidades,
+    labels=categorias,
+    autopct="%1.1f%%"
+)
+
+plt.title("Distribucion por categoria")
+
+plt.savefig("graficas/pastel.png")
+
+plt.close()
