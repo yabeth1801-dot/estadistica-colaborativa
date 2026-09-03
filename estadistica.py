@@ -12,3 +12,6 @@ ingresos = datos[:, 1]
 
 
 # MEDIDAS DE DISPERSION
+
+desviacion = np.std(ingresos)
+print("Desviacion estandar del ingreso:", desviacion)
