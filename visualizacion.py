@@ -22,3 +22,20 @@ plt.title("Relacion entre edad e ingreso")
 plt.savefig("graficas/dispersion.png")
 
 plt.close()
+
+
+
+
+# HISTOGRAMA
+
+
+plt.hist(edad, bins=15)
+
+plt.xlabel("Edad")
+plt.ylabel("Frecuencia")
+
+plt.title("Distribucion de edades")
+
+plt.savefig("graficas/histograma.png")
+
+plt.close()
